@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Beauty Bar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #FFC0CB;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #FF69B4;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.2rem;
+            color: #4CAF50;
+        }
+
+        ul li p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .booking-form {
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form h2 {
+            font-size: 1.8rem;
+            color: #FF69B4;
+            margin-bottom: 1rem;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .booking-form input, .booking-form select, .booking-form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .booking-form button {
+            background-color: #FF69B4;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .booking-form button:hover {
+            background-color: #FF1493;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .about {
+            background: #fefefe;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>K Beauty Bar</h1>
+        <p>Your trusted beauty bar specializing in facials, makeup, and lash treatments</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to K Beauty Bar, your certified and trusted destination for all things beauty. We specialize in facials, makeup, and a range of lash treatments that women love. Let us take care of all your makeup and lash needs for a flawless look every time.</p>
+        </section>
+
+        <section>
+            <h2>Makeup Services</h2>
+            <ul>
+                <li>
+                    <h3>Natural Look - R300</h3>
+                    <p>Enhances your features with subtle, minimal makeup for an effortless appearance.</p>
+                </li>
+                <li>
+                    <h3>Soft Glam - R350</h3>
+                    <p>Polished look with blended colors and shimmer, perfect for any occasion.</p>
+                </li>
+                <li>
+                    <h3>Face Beat - R400</h3>
+                    <p>Offers bold, flawless coverage for a striking appearance.</p>
+                </li>
+                <li>
+                    <h3>Bridesmaid - R400</h3>
+                    <p>Specializes in radiant beauty for weddings and special events.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Lash Services</h2>
+            <ul>
+                <li>
+                    <h3>Classic Lashes - R300</h3>
+                    <p>Simple extension for a natural, elegant look.</p>
+                </li>
+                <li>
+                    <h3>Hybrid Lashes - R350</h3>
+                    <p>Combines classic and volume techniques for balanced beauty.</p>
+                </li>
+                <li>
+                    <h3>Volume Lashes - R400</h3>
+                    <p>Fuller and more dramatic lash extensions for a bold appearance.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="booking-form">
+            <h2>Book Your Time Slot</h2>
+            <form id="bookingForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="service">Select Service</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select a Service --</option>
+                    <option value="natural-look">Natural Look - R300</option>
+                    <option value="soft-glam">Soft Glam - R350</option>
+                    <option value="face-beat">Face Beat - R400</option>
+                    <option value="bridesmaid">Bridesmaid - R400</option>
+                    <option value="classic-lashes">Classic Lashes - R300</option>
+                    <option value="hybrid-lashes">Hybrid Lashes - R350</option>
+                    <option value="volume-lashes">Volume Lashes - R400</option>
+                </select>
+
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="button" onclick="submitBooking()">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 K Beauty Bar. All rights reserved.</p>
+        <p>Contact: Nkhangwe Veronica Manenzhe | Email: khangwe23@gmail.com | Phone: 076 518 1025</p>
+    </footer>
+
+    <script>
+        function submitBooking() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+
+            if (name && email && service && date && time) {
+                alert(`Thank you, ${name}! Your booking for ${service} on ${date} at ${time} has been confirmed.`);
+                document.getElementById('bookingForm').reset();
+            } else {
+                alert('Please fill in all the fields before submitting.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
